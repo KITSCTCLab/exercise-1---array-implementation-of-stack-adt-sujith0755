@@ -3,30 +3,30 @@ class Stack:
     def __init__(self, size):
         self.items = [None]*size
         self.size = size
-        self.top=-1
+        self.top= -1
         
     def is_empty(self):
-        if(self.top == -1):
-            return true
+        if (self.top == -1):
+            return True
         else:
-            return false
+            return False
 
     def is_full(self):
-        if(self.top == self.size-1):
-            return true
+        if (self.top == self.size-1):
+            return True
         else:
-            return false
+            return False
  
 
     def push(self, data):
         if not self.is_full():
-            self.top +=1
-            self.items[self.top]=data
+            self.top += 1
+            self.items[self.top] = data
 
     def pop(self):
         if not self.is_empty():
-            data=self.items[self.top]
-            self.top-=1
+            data = self.items[self.top]
+            self.top -= 1
 
     def status(self):
         for i in range(self.top+1):

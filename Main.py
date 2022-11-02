@@ -32,7 +32,7 @@ class Stack:
         for i in range(self.top+1):
             print(self.items[i])
 
-# Do not change the following code
+
 size, queries = map(int, input().rstrip().split())
 stack = Stack(size)
 for line in range(queries):
